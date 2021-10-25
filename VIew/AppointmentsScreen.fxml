@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AppointmentsScreenController">
+   <children>
+      <Label layoutX="144.0" layoutY="35.0" prefHeight="54.0" prefWidth="282.0" text="Appointments">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+      <Button fx:id="MonthButton" layoutX="17.0" layoutY="94.0" mnemonicParsing="false" onAction="#MonthButtonPushed" text="MONTH" />
+      <Button fx:id="WeekButton" layoutX="91.0" layoutY="94.0" mnemonicParsing="false" onAction="#WeekButtonPushed" text="WEEK" />
+      <Button fx:id="AddButton" layoutX="22.0" layoutY="351.0" mnemonicParsing="false" onAction="#AddButtonPushed" prefHeight="27.0" prefWidth="55.0" text="ADD" />
+      <Button fx:id="UpdateButton" layoutX="192.0" layoutY="351.0" mnemonicParsing="false" onAction="#UpdateButtonPushed" prefHeight="27.0" prefWidth="65.0" text="Update" />
+      <Button fx:id="BackButton" layoutX="513.0" layoutY="22.0" mnemonicParsing="false" onAction="#BackButtonPushed" prefHeight="27.0" prefWidth="55.0" text="Back" />
+      <TableView fx:id="AppointmentsTableView" layoutX="1.0" layoutY="124.0" prefHeight="224.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="IDColumn" prefWidth="56.0" text="ID" />
+          <TableColumn fx:id="TitleColumn" prefWidth="76.0" text="Title" />
+            <TableColumn fx:id="DescriptionColumn" prefWidth="88.0" text="Description" />
+            <TableColumn fx:id="LocationColumn" prefWidth="84.0" text="Location" />
+            <TableColumn fx:id="ContactColumn" prefWidth="61.0" text="Contact" />
+            <TableColumn fx:id="TypeColumn" prefWidth="51.0" text="Type" />
+            <TableColumn fx:id="StartColumn" prefWidth="61.0" text="Start" />
+            <TableColumn fx:id="EndColumn" prefWidth="48.0" text="End" />
+            <TableColumn fx:id="CustomerIDColumn" prefWidth="88.0" text="CustomerID" />
+        </columns>
+      </TableView>
+      <Button fx:id="DeleteButton" layoutX="268.0" layoutY="351.0" mnemonicParsing="false" onAction="#DeleteButtonPushed" prefHeight="27.0" prefWidth="65.0" text="Delete" />
+   </children>
+</AnchorPane>

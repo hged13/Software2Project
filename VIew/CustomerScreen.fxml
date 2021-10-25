@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomerScreenController">
+   <children>
+      <TableView fx:id="CustomersTable" layoutX="7.0" layoutY="46.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="586.0">
+         <columns>
+            <TableColumn fx:id="CustomerIDColumn" prefWidth="73.0" text="CustomerID" />
+            <TableColumn fx:id="CustomerNameColumn" minWidth="0.0" prefWidth="98.0" text="Customer Name" />
+            <TableColumn fx:id="CustomerAddressColumn" minWidth="0.0" prefWidth="88.0" text="Address" />
+            <TableColumn fx:id="PostalCodeColumn" minWidth="0.0" prefWidth="87.0" text="Postal Code" />
+            <TableColumn fx:id="PhoneNumberColumn" minWidth="0.0" prefWidth="95.0" text="Phone #" />
+            <TableColumn fx:id="DivisionColumn" minWidth="0.0" prefWidth="71.0" text="Division" />
+         </columns>
+      </TableView>
+      <Label layoutX="193.0" layoutY="8.0" prefHeight="37.0" prefWidth="188.0" text="CUSTOMERS">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="AddButton" layoutX="94.0" layoutY="359.0" mnemonicParsing="false" onAction="#AddButtonPushed" text="Add" />
+      <Button fx:id="EditButton" layoutX="260.0" layoutY="359.0" mnemonicParsing="false" onAction="#EditButtonPushed" text="Edit" />
+      <Button fx:id="BackButton" layoutX="381.0" layoutY="359.0" mnemonicParsing="false" onAction="#BackButtonPushed" text="Back" />
+      <Button fx:id="DeleteButton" layoutX="172.0" layoutY="359.0" mnemonicParsing="false" onAction="#DeleteButtonPushed" text="Delete" />
+   </children>
+</AnchorPane>

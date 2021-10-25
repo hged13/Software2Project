@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReportsScreenController">
+   <children>
+      <TableView fx:id="ScheduleTableView" layoutX="14.0" layoutY="44.0" prefHeight="200.0" prefWidth="576.0">
+        <columns>
+          <TableColumn fx:id="AppointmentIDColumn" prefWidth="99.0" text="Appointment ID" />
+          <TableColumn fx:id="TitleColumn" prefWidth="63.0" text="Title" />
+            <TableColumn fx:id="TypeColumn" prefWidth="46.0" text="Type" />
+            <TableColumn fx:id="DescriptionColumn" prefWidth="96.0" text="Description" />
+            <TableColumn fx:id="StartColumn" minWidth="0.0" prefWidth="112.0" text="Start" />
+            <TableColumn fx:id="EndColumn" minWidth="0.0" prefWidth="105.0" text="End" />
+            <TableColumn fx:id="CustIDColumn" minWidth="0.0" prefWidth="54.0" text="CustID" />
+        </columns>
+      </TableView>
+      <Label fx:id="MonthLabel" layoutX="47.0" layoutY="306.0" prefHeight="27.0" prefWidth="80.0" />
+      <Button fx:id="ThisMonthButton" layoutX="14.0" layoutY="267.0" mnemonicParsing="false" onAction="#ThisMonthButtonPushed" text="This Month" />
+      <Button fx:id="NextMonthButton" layoutX="96.0" layoutY="267.0" mnemonicParsing="false" onAction="#NextMonthButtonPushed" prefHeight="27.0" prefWidth="80.0" text="NextMonth" />
+      <Label layoutX="41.0" layoutY="244.0" text="Total Appointments:" />
+      <Button fx:id="PlanningButton" layoutX="211.0" layoutY="267.0" mnemonicParsing="false" onAction="#PlanningButtonPushed" text="Planning" />
+      <Button fx:id="DebriefingButton" layoutX="282.0" layoutY="267.0" mnemonicParsing="false" onAction="#DebriefingButtonPushed" text="Debriefing" />
+      <Button fx:id="OtherButton" layoutX="367.0" layoutY="267.0" mnemonicParsing="false" onAction="#OtherButtonPushed" text="Other" />
+      <Label fx:id="TypeLabel" layoutX="277.0" layoutY="306.0" prefHeight="27.0" prefWidth="80.0" />
+      <Button fx:id="LileeButton" layoutX="54.0" layoutY="14.0" mnemonicParsing="false" onAction="#LileeButtonPushed" text="Li" />
+      <Button fx:id="DanielButton" layoutX="149.0" layoutY="14.0" mnemonicParsing="false" onAction="#DanielButtonPushed" text="Daniel" />
+      <Button fx:id="OtherContactButton" layoutX="250.0" layoutY="14.0" mnemonicParsing="false" onAction="#OtherContactButtonPushed" text="Anita" />
+      <Label layoutX="400.0" layoutY="244.0" prefHeight="17.0" prefWidth="200.0" text="Contact With Most Appointments:" />
+      <Label fx:id="MostLabel" layoutX="500.0" layoutY="263.0" prefHeight="36.0" prefWidth="87.0" />
+      <Button fx:id="BackButton" layoutX="484.0" layoutY="359.0" mnemonicParsing="false" onAction="#BackButtonPushed" text="Back" />
+      <Label fx:id="CustomersLabel" layoutX="149.0" layoutY="364.0" text="Label" />
+      <Label layoutX="47.0" layoutY="364.0" prefHeight="17.0" prefWidth="96.0" text="Total customers:" />
+      <Label layoutX="262.0" layoutY="364.0" text="Total appointments:" />
+      <Label fx:id="AppointmentsLabel" layoutX="377.0" layoutY="364.0" text="Label" />
+   </children>
+</AnchorPane>
